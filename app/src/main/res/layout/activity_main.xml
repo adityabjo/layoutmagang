@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aspiree15.maganglayout.MainActivity"
+    tools:layout_editor_absoluteY="73dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="X" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:textColor="#b755ee"
+        android:text="SILAHKAN COBA LAGI" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="SKOR NILAI" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="60dp"
+        android:text="68"
+        android:layout_centerVertical="true"
+        android:textColor="#fb1c12"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/salah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:text="SALAH"
+        android:textColor="#fb1c12"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/kosong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KOSONG"
+        android:textColor="#000000"
+        android:layout_alignBaseline="@+id/salah"
+        android:layout_toRightOf="@+id/salah"
+        android:layout_marginLeft="30dp"
+         />
+
+    <TextView
+        android:id="@+id/benar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BENAR"
+        android:textColor="#0080bb"
+        android:layout_toLeftOf="@id/salah"
+        android:layout_alignBaseline="@+id/salah"
+        android:layout_marginRight="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="7"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="6"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/koreksi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:background="#3ef4f0"
+                android:text="KOREKSI &amp; PEMBAHASAN" />
+
+            <TextView
+                android:id="@+id/cobalagi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:background="#b755ee"
+                android:text="COBA LAGI" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
